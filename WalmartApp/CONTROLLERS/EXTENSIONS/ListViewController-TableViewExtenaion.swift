@@ -52,9 +52,11 @@ extension ListViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        if let product = baseProduct?.products?[indexPath.row]{
-            self.detailViewController.product = product
-            self.navigationController?.pushViewController(self.detailViewController, animated: true)
+        if let prods = baseProduct?.products, prods.count > indexPath.row{
+            if let product = baseProduct?.products?[indexPath.row]{
+                self.detailViewController.product = product
+                self.navigationController?.pushViewController(self.detailViewController, animated: true)
+            }
         }
     }
 }
