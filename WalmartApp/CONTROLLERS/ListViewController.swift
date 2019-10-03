@@ -26,7 +26,7 @@ class ListViewController: UIViewController {
         self.registerCells()
         self.fetchWalmartProducts()
         self.navigationItem.title = "Sam's Club"
-        let bundle : Bundle = Bundle(for: type(of: self))
+        self.navigationController?.navigationBar.backgroundColor = UIColor.brown
     }
     
     override func viewWillAppear(_ animated: Bool) {
