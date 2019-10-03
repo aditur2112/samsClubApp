@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E84C714C23426A7800542CD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C714B23426A7800542CD8 /* AppDelegate.swift */; };
+		E84C715123426A7800542CD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84C714F23426A7800542CD8 /* Main.storyboard */; };
+		E84C715323426A7A00542CD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84C715223426A7A00542CD8 /* Assets.xcassets */; };
+		E84C715623426A7A00542CD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84C715423426A7A00542CD8 /* LaunchScreen.storyboard */; };
+		E84C716823426EA900542CD8 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84C716423426EA900542CD8 /* Reachability.swift */; };
+		E87B622F234554960008C4FC /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B622E234554960008C4FC /* UIImage-Extension.swift */; };
+		E87B62342345A59A0008C4FC /* DetailDescTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B62322345A59A0008C4FC /* DetailDescTableCell.swift */; };
+		E87B62352345A59A0008C4FC /* DetailDescTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87B62332345A59A0008C4FC /* DetailDescTableCell.xib */; };
+		E87B623B2346682A0008C4FC /* ListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B62392346682A0008C4FC /* ListHeaderView.swift */; };
+		E87B623C2346682A0008C4FC /* ListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87B623A2346682A0008C4FC /* ListHeaderView.xib */; };
+		E87B623E234674A80008C4FC /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87B623D234674A80008C4FC /* ErrorHandler.swift */; };
+		E8E33F9523427C53003614C4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33F9323427C53003614C4 /* ListViewController.swift */; };
+		E8E33F9623427C53003614C4 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E33F9423427C53003614C4 /* ListViewController.xib */; };
+		E8E33F9923427C6D003614C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33F9723427C6D003614C4 /* DetailViewController.swift */; };
+		E8E33F9A23427C6D003614C4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E33F9823427C6D003614C4 /* DetailViewController.xib */; };
+		E8E33F9C23439B18003614C4 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33F9B23439B18003614C4 /* NetworkDispatcher.swift */; };
+		E8E33F9E23439B51003614C4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33F9D23439B51003614C4 /* NetworkManager.swift */; };
+		E8E33FA023439B73003614C4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33F9F23439B73003614C4 /* Constants.swift */; };
+		E8E33FA22343A2D3003614C4 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FA12343A2D3003614C4 /* String-Extension.swift */; };
+		E8E33FA62343AE9E003614C4 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FA42343AE9D003614C4 /* Products.swift */; };
+		E8E33FA72343AE9E003614C4 /* BaseProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FA52343AE9E003614C4 /* BaseProduct.swift */; };
+		E8E33FAB2343B59C003614C4 /* ListViewController-TableViewExtenaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FAA2343B59C003614C4 /* ListViewController-TableViewExtenaion.swift */; };
+		E8E33FAE2343C254003614C4 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FAC2343C254003614C4 /* ProductTableViewCell.swift */; };
+		E8E33FAF2343C254003614C4 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E33FAD2343C254003614C4 /* ProductTableViewCell.xib */; };
+		E8E33FB12343F650003614C4 /* UItableView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FB02343F650003614C4 /* UItableView-Extension.swift */; };
+		E8E33FB323440317003614C4 /* DetailViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FB223440317003614C4 /* DetailViewController-Extension.swift */; };
+		E8E33FB623440343003614C4 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E33FB423440343003614C4 /* DetailTableViewCell.swift */; };
+		E8E33FB723440343003614C4 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E33FB523440343003614C4 /* DetailTableViewCell.xib */; };
+		F3BAEA9FB4D58FAF89353CB3 /* Pods_WalmartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FC59799C2793ED1AA157955 /* Pods_WalmartApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6FC59799C2793ED1AA157955 /* Pods_WalmartApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalmartApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6FF3C3B83F42DFC59E78700 /* Pods-WalmartApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalmartApp.debug.xcconfig"; path = "Target Support Files/Pods-WalmartApp/Pods-WalmartApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E84C714823426A7800542CD8 /* WalmartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalmartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84C714B23426A7800542CD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E84C715023426A7800542CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E84C715223426A7A00542CD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E84C715523426A7A00542CD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E84C715723426A7A00542CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84C716423426EA900542CD8 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E87B622E234554960008C4FC /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
+		E87B62322345A59A0008C4FC /* DetailDescTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDescTableCell.swift; sourceTree = "<group>"; };
+		E87B62332345A59A0008C4FC /* DetailDescTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailDescTableCell.xib; sourceTree = "<group>"; };
+		E87B62392346682A0008C4FC /* ListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListHeaderView.swift; sourceTree = "<group>"; };
+		E87B623A2346682A0008C4FC /* ListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListHeaderView.xib; sourceTree = "<group>"; };
+		E87B623D234674A80008C4FC /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		E8E33F9323427C53003614C4 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E8E33F9423427C53003614C4 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		E8E33F9723427C6D003614C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E8E33F9823427C6D003614C4 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		E8E33F9B23439B18003614C4 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		E8E33F9D23439B51003614C4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E8E33F9F23439B73003614C4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8E33FA12343A2D3003614C4 /* String-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
+		E8E33FA42343AE9D003614C4 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Products.swift; path = ../../../../../Downloads/BaseProduct/Products.swift; sourceTree = "<group>"; };
+		E8E33FA52343AE9E003614C4 /* BaseProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseProduct.swift; path = ../../../../../Downloads/BaseProduct/BaseProduct.swift; sourceTree = "<group>"; };
+		E8E33FAA2343B59C003614C4 /* ListViewController-TableViewExtenaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController-TableViewExtenaion.swift"; sourceTree = "<group>"; };
+		E8E33FAC2343C254003614C4 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		E8E33FAD2343C254003614C4 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		E8E33FB02343F650003614C4 /* UItableView-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UItableView-Extension.swift"; sourceTree = "<group>"; };
+		E8E33FB223440317003614C4 /* DetailViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController-Extension.swift"; sourceTree = "<group>"; };
+		E8E33FB423440343003614C4 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		E8E33FB523440343003614C4 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		EDBB3CE934C78A0BC862CC22 /* Pods-WalmartApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalmartApp.release.xcconfig"; path = "Target Support Files/Pods-WalmartApp/Pods-WalmartApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E84C714523426A7800542CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3BAEA9FB4D58FAF89353CB3 /* Pods_WalmartApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9254898051AD118540EEE6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6FF3C3B83F42DFC59E78700 /* Pods-WalmartApp.debug.xcconfig */,
+				EDBB3CE934C78A0BC862CC22 /* Pods-WalmartApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E84C713F23426A7800542CD8 = {
+			isa = PBXGroup;
+			children = (
+				E84C714A23426A7800542CD8 /* WalmartApp */,
+				E84C714923426A7800542CD8 /* Products */,
+				B9254898051AD118540EEE6A /* Pods */,
+				F1E35BC4885FA6D5C7A41A8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E84C714923426A7800542CD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E84C714823426A7800542CD8 /* WalmartApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E84C714A23426A7800542CD8 /* WalmartApp */ = {
+			isa = PBXGroup;
+			children = (
+				E84C716123426D1400542CD8 /* CORE */,
+				E84C716023426CFE00542CD8 /* CONTROLLERS */,
+				E84C716223426D5E00542CD8 /* DATA MODEL */,
+				E84C715F23426CF800542CD8 /* VIEWS */,
+				E84C715E23426CDD00542CD8 /* NETWORK MANAGER */,
+				E84C715D23426CCF00542CD8 /* UTILITIES */,
+				E84C714F23426A7800542CD8 /* Main.storyboard */,
+				E84C715223426A7A00542CD8 /* Assets.xcassets */,
+				E84C715423426A7A00542CD8 /* LaunchScreen.storyboard */,
+				E84C715723426A7A00542CD8 /* Info.plist */,
+			);
+			path = WalmartApp;
+			sourceTree = "<group>";
+		};
+		E84C715D23426CCF00542CD8 /* UTILITIES */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33F9F23439B73003614C4 /* Constants.swift */,
+				E8E33FA12343A2D3003614C4 /* String-Extension.swift */,
+				E8E33FB02343F650003614C4 /* UItableView-Extension.swift */,
+				E87B622E234554960008C4FC /* UIImage-Extension.swift */,
+			);
+			path = UTILITIES;
+			sourceTree = "<group>";
+		};
+		E84C715E23426CDD00542CD8 /* NETWORK MANAGER */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33F9B23439B18003614C4 /* NetworkDispatcher.swift */,
+				E8E33F9D23439B51003614C4 /* NetworkManager.swift */,
+				E84C716423426EA900542CD8 /* Reachability.swift */,
+				E87B623D234674A80008C4FC /* ErrorHandler.swift */,
+			);
+			path = "NETWORK MANAGER";
+			sourceTree = "<group>";
+		};
+		E84C715F23426CF800542CD8 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				E87B6236234664CF0008C4FC /* HEADERS */,
+				E87B62302345A46D0008C4FC /* LIST */,
+				E87B62312345A4780008C4FC /* DETAIL */,
+			);
+			path = VIEWS;
+			sourceTree = "<group>";
+		};
+		E84C716023426CFE00542CD8 /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33F9323427C53003614C4 /* ListViewController.swift */,
+				E8E33F9423427C53003614C4 /* ListViewController.xib */,
+				E8E33F9723427C6D003614C4 /* DetailViewController.swift */,
+				E8E33F9823427C6D003614C4 /* DetailViewController.xib */,
+				E8E33FA92343B554003614C4 /* EXTENSIONS */,
+			);
+			path = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		E84C716123426D1400542CD8 /* CORE */ = {
+			isa = PBXGroup;
+			children = (
+				E84C714B23426A7800542CD8 /* AppDelegate.swift */,
+			);
+			path = CORE;
+			sourceTree = "<group>";
+		};
+		E84C716223426D5E00542CD8 /* DATA MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33FA32343ADF3003614C4 /* LIST MODEL */,
+				E8E33FA82343AEB3003614C4 /* DETAIL MODEL */,
+			);
+			path = "DATA MODEL";
+			sourceTree = "<group>";
+		};
+		E87B62302345A46D0008C4FC /* LIST */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33FAC2343C254003614C4 /* ProductTableViewCell.swift */,
+				E8E33FAD2343C254003614C4 /* ProductTableViewCell.xib */,
+			);
+			path = LIST;
+			sourceTree = "<group>";
+		};
+		E87B62312345A4780008C4FC /* DETAIL */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33FB423440343003614C4 /* DetailTableViewCell.swift */,
+				E8E33FB523440343003614C4 /* DetailTableViewCell.xib */,
+				E87B62322345A59A0008C4FC /* DetailDescTableCell.swift */,
+				E87B62332345A59A0008C4FC /* DetailDescTableCell.xib */,
+			);
+			path = DETAIL;
+			sourceTree = "<group>";
+		};
+		E87B6236234664CF0008C4FC /* HEADERS */ = {
+			isa = PBXGroup;
+			children = (
+				E87B62392346682A0008C4FC /* ListHeaderView.swift */,
+				E87B623A2346682A0008C4FC /* ListHeaderView.xib */,
+			);
+			path = HEADERS;
+			sourceTree = "<group>";
+		};
+		E8E33FA32343ADF3003614C4 /* LIST MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33FA52343AE9E003614C4 /* BaseProduct.swift */,
+				E8E33FA42343AE9D003614C4 /* Products.swift */,
+			);
+			path = "LIST MODEL";
+			sourceTree = "<group>";
+		};
+		E8E33FA82343AEB3003614C4 /* DETAIL MODEL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "DETAIL MODEL";
+			sourceTree = "<group>";
+		};
+		E8E33FA92343B554003614C4 /* EXTENSIONS */ = {
+			isa = PBXGroup;
+			children = (
+				E8E33FAA2343B59C003614C4 /* ListViewController-TableViewExtenaion.swift */,
+				E8E33FB223440317003614C4 /* DetailViewController-Extension.swift */,
+			);
+			path = EXTENSIONS;
+			sourceTree = "<group>";
+		};
+		F1E35BC4885FA6D5C7A41A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FC59799C2793ED1AA157955 /* Pods_WalmartApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E84C714723426A7800542CD8 /* WalmartApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E84C715A23426A7A00542CD8 /* Build configuration list for PBXNativeTarget "WalmartApp" */;
+			buildPhases = (
+				00CA191A7C0144A337B06D9D /* [CP] Check Pods Manifest.lock */,
+				E84C714423426A7800542CD8 /* Sources */,
+				E84C714523426A7800542CD8 /* Frameworks */,
+				E84C714623426A7800542CD8 /* Resources */,
+				BE6E754FA93CDB2302FB7845 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalmartApp;
+			productName = WalmartApp;
+			productReference = E84C714823426A7800542CD8 /* WalmartApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E84C714023426A7800542CD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = BBVA;
+				TargetAttributes = {
+					E84C714723426A7800542CD8 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = E84C714323426A7800542CD8 /* Build configuration list for PBXProject "WalmartApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E84C713F23426A7800542CD8;
+			productRefGroup = E84C714923426A7800542CD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E84C714723426A7800542CD8 /* WalmartApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E84C714623426A7800542CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84C715623426A7A00542CD8 /* LaunchScreen.storyboard in Resources */,
+				E87B623C2346682A0008C4FC /* ListHeaderView.xib in Resources */,
+				E8E33FAF2343C254003614C4 /* ProductTableViewCell.xib in Resources */,
+				E87B62352345A59A0008C4FC /* DetailDescTableCell.xib in Resources */,
+				E84C715323426A7A00542CD8 /* Assets.xcassets in Resources */,
+				E8E33F9A23427C6D003614C4 /* DetailViewController.xib in Resources */,
+				E8E33F9623427C53003614C4 /* ListViewController.xib in Resources */,
+				E8E33FB723440343003614C4 /* DetailTableViewCell.xib in Resources */,
+				E84C715123426A7800542CD8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00CA191A7C0144A337B06D9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WalmartApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6E754FA93CDB2302FB7845 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalmartApp/Pods-WalmartApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WalmartApp/Pods-WalmartApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WalmartApp/Pods-WalmartApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E84C714423426A7800542CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E33F9E23439B51003614C4 /* NetworkManager.swift in Sources */,
+				E8E33FAE2343C254003614C4 /* ProductTableViewCell.swift in Sources */,
+				E87B623E234674A80008C4FC /* ErrorHandler.swift in Sources */,
+				E8E33FA023439B73003614C4 /* Constants.swift in Sources */,
+				E87B62342345A59A0008C4FC /* DetailDescTableCell.swift in Sources */,
+				E8E33FB623440343003614C4 /* DetailTableViewCell.swift in Sources */,
+				E8E33F9C23439B18003614C4 /* NetworkDispatcher.swift in Sources */,
+				E84C716823426EA900542CD8 /* Reachability.swift in Sources */,
+				E8E33FA22343A2D3003614C4 /* String-Extension.swift in Sources */,
+				E8E33FB12343F650003614C4 /* UItableView-Extension.swift in Sources */,
+				E84C714C23426A7800542CD8 /* AppDelegate.swift in Sources */,
+				E8E33FA72343AE9E003614C4 /* BaseProduct.swift in Sources */,
+				E87B623B2346682A0008C4FC /* ListHeaderView.swift in Sources */,
+				E8E33FB323440317003614C4 /* DetailViewController-Extension.swift in Sources */,
+				E8E33FAB2343B59C003614C4 /* ListViewController-TableViewExtenaion.swift in Sources */,
+				E8E33FA62343AE9E003614C4 /* Products.swift in Sources */,
+				E87B622F234554960008C4FC /* UIImage-Extension.swift in Sources */,
+				E8E33F9523427C53003614C4 /* ListViewController.swift in Sources */,
+				E8E33F9923427C6D003614C4 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E84C714F23426A7800542CD8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84C715023426A7800542CD8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E84C715423426A7A00542CD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E84C715523426A7A00542CD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E84C715823426A7A00542CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E84C715923426A7A00542CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E84C715B23426A7A00542CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6FF3C3B83F42DFC59E78700 /* Pods-WalmartApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF597WAT62;
+				INFOPLIST_FILE = WalmartApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBVA.WalmartApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E84C715C23426A7A00542CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBB3CE934C78A0BC862CC22 /* Pods-WalmartApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GF597WAT62;
+				INFOPLIST_FILE = WalmartApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBVA.WalmartApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E84C714323426A7800542CD8 /* Build configuration list for PBXProject "WalmartApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E84C715823426A7A00542CD8 /* Debug */,
+				E84C715923426A7A00542CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E84C715A23426A7A00542CD8 /* Build configuration list for PBXNativeTarget "WalmartApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E84C715B23426A7A00542CD8 /* Debug */,
+				E84C715C23426A7A00542CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E84C714023426A7800542CD8 /* Project object */;
+}
